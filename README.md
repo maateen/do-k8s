@@ -37,3 +37,14 @@ On MacOSX, we can install these tools with the following commands:
 $ brew install kubectl
 $ brew install kubernetes-helm
 ```
+
+## Terraform Variables
+
+| Name | Description | Default |
+| --- | --- | --- |
+| do_region | The digital ocean region you'd like to deploy the cluster in | "nyc1" |
+| cluster_name | The name of the Kubernetes cluster | "do-k8s" |
+| cluster_version | The version of Kubernetes to install ithee cluster | "1.16.6-do.2" |
+| cluster_default_node_size | The size of the droplets in the default node pool in the cluster | "s-2vcpu-4gb" |
+| cluster_default_node_count | The number of nodes in the default node pool in the cluster | 2 |
+| kubeconfig_path | The path to save the kubeconfig to | "~/.kube/config" |
